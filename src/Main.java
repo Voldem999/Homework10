@@ -14,5 +14,7 @@ public class Main {
         System.out.println(book.equals(tarasBulba));
         nikolayGogol = author;
         System.out.println(author.equals(nikolayGogol));
+        System.out.println(book.hashCode() == tarasBulba.hashCode());
+        System.out.println(author.hashCode() == nikolayGogol.hashCode());
     }
 }
