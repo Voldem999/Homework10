@@ -9,6 +9,10 @@ public class Main {
         Book tarasBulba = new Book("Taras Bulba", 1835, nikolayGogol);
         tarasBulba.setPublishYear(1837);
         System.out.println(tarasBulba);
-
+        Book book = new Book("Sherlock Holmes", 1892, author);
+        tarasBulba = book;
+        System.out.println(book.equals(tarasBulba));
+        nikolayGogol = author;
+        System.out.println(author.equals(nikolayGogol));
     }
 }
